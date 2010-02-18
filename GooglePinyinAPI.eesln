@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--EmEditor Solution file-->
+<Solution>
+	<Projects>
+		<Project RelativePath="_web\_web.eeproj"/>
+		<Project RelativePath="Braille\Braille.eeproj"/>
+		<Project RelativePath="IChingHexagrams\IChingHexagrams.eeproj"/>
+		<Project RelativePath="StudentsComments\StudentsComments.eeproj"/>
+	</Projects>
+
+	<GlobalOptions>
+		<SelectedType Value="2"/>
+		<SelectedPath Value="E:\orzTech\GooglePinyinAPI\_web\css\style.css"/>
+		<SelectedProject Value="E:\orzTech\GooglePinyinAPI\_web\_web.eeproj"/>
+		<StartUpProject Value="E:\orzTech\GooglePinyinAPI\_web\_web.eeproj"/>
+	</GlobalOptions>
+</Solution>

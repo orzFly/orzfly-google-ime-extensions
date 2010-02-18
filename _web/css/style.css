@@ -1,0 +1,10 @@
+* {font-family: "Microsoft Yahei", Verdana, Tahoma, sans-serif;outline:none;-webkit-user-select:none;cursor:default;}
+body {font-size: 14px;margin:10px;overflow: auto;}
+#settings {float:right;border: solid #ccc 1px;}
+#settings div{border-left:solid 7px transparent;border-right:solid 7px transparent;}
+div.toolstrip-button {-webkit-box-orient:horizontal;-webkit-box-align:center;-webkit-box-sizing:border-box;-webkit-user-select:none;border:7px solid transparent;background:transparent;line-height:100%;height:100%;padding:0;cursor:pointer;display:inline-block;}
+div.toolstrip-button * {cursor:pointer;}
+div.toolstrip-button>img {width:16px;height:16px;margin:-2px 5px -2px -1px;}
+div.toolstrip-button>span {margin-right:1px;margin-top:-1px;}
+div.toolstrip-button:hover {border-width:7px;-webkit-border-image:url(../images/toolstrip-button-hover.png) 7 round round;-moz-border-image:url(../images/toolstrip-button-hover.png) 7 round round;-khtml-border-image:url(../images/toolstrip-button-hover.png) 7 round round;border-image:url(../images/toolstrip-button-hover.png) 7 round round;}
+div.toolstrip-button:active, div.toolstrip-button-pressed {border-width:7px;-webkit-border-image:url(../images/toolstrip-button-active.png) 7 round round;-moz-border-image:url(../images/toolstrip-button-active.png) 7 round round;-khtml-border-image:url(../images/toolstrip-button-active.png) 7 round round;border-image:url(../images/toolstrip-button-active.png) 7 round round;}
