@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>谷歌拼音输入法扩展在线演示 - 囧科技 | orzTech</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/ime.css" />
+</head>
+
+<body>
+
+<div id="container">
+	<h1>谷歌拼音输入法扩展在线演示 - 囧科技 | orzTech</h1>
+	<div id="settings">
+		<div id="settings-loadPinyin" class="toolstrip-button"><span>加载拼音字库</span></div>
+		<div id="settings-choicePerPage"><label>每页选项数：</label></div>
+	</div>
+	<span id="output" spellcheck="false"></span><input id="parse" value="" maxlength="64" spellcheck="false"/>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ime.js"></script>
+<script type="text/javascript" src="js/ime.ext.bj.js"></script>
+<script type="text/javascript" src="js/ime.ext.xs.js"></script>
+<script type="text/javascript">
+	(function(){
+		$(document).ready(function(){
+			for(var i=3;i<10;i++)
+			{
+				$("#settings-choicePerPage").append('<div class="toolstrip-button" id="settings-choicePerPage-' + i + '"><span>' + i + '</span></div>');
+			}
+			$("#settings-choicePerPage").children('.toolstrip-button').click(function(){
+				$("#settings-choicePerPage").children('.toolstrip-button').removeClass('toolstrip-button-pressed');
+				$(this).addClass('toolstrip-button-pressed');
+				virtualIME.settings.choicePerPage = parseInt($(this).text());
+				virtualIME.lastParse = '';
+				virtualIME.input.update();
+			});
+			$('#settings-choicePerPage-' + virtualIME.settings.choicePerPage).addClass('toolstrip-button-pressed');
+			$('#settings-loadPinyin').click(function(){
+				$(document).append('<scr' + 'ipt type="text/javascript" src="js/ime.pinyin.js"></scr' + 'ipt>');
+				$(this).hide();
+			});
+			$('#settings').click(function(){virtualIME.input.focus()});
+			
+			virtualIME.input.update();
+		});
+	})();
+</script>
+
+</body>
+</html>

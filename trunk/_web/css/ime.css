@@ -1,0 +1,30 @@
+#parse {width:200px;height:20px;border:none;text-decoration:underline;}
+#parse, #output {font-size: 14px;font-weight:normal;padding:0;margin:0;-webkit-user-select:auto;cursor: auto;}
+#ime {z-index:100;position:absolute;min-width:200px;border:solid #a4a4a4 1px;background-color:white;cursor:default;-webkit-box-shadow:2px 2px 4px grey;-moz-box-shadow:2px 2px 4px grey;box-shadow:2px 2px 4px grey;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag: none;}
+#ime-warpper {border:solid #000000 1px;padding:1px;}
+#ime-desc {font-family:"Simsun" !important;font-weight:normal;font-size:12px;float:right;color:gray;margin-right: 3px;margin-top:4px;}
+#ime-input {margin:1px;float:left;line-height:16px;height:16px;}
+#ime-input * {font-family:"Arial";font-weight:bold;font-size:16px;}
+#ime-input-text{border-right:solid #3AB8FB 1px;margin-right:10px;}
+.ime-input-keyword {color:blue;margin-right:5px;margin-left:5px;}
+#ime-output {margin:1px;min-height: 20px;}
+#ime-output * {font-family:"Simsun" !important;font-weight:normal;font-size:16px;}
+#ime-output ul {margin:0;padding:0;list-style:none;}
+#ime-output li {display:block;margin:0;padding-top:4px;padding-bottom:4px;max-width:400px;overflow:hidden;max-height: 18px;}
+#ime-output div {display:inline;padding:3px;cursor:pointer;line-height:20px;vertical-align:top;}
+.ime-output-active div {color:white;padding:0px !important;background-color:black;border:solid black 3px !important;border-radius:4px;-moz-border-radius:4px;-webkit-box-shadow:1px 1px 1px grey;-moz-box-shadow:1px 1px 1px grey;}
+.ime-output-suggest {color:gray;margin-left:2px;}
+.ime-output-disabled {color:gray;}
+#ime-logo {background:url(../images/logo.png) white;width:52px;height:19px;float:right;top:2px;right:2px;position:relative;cursor:pointer;}
+#ime-logo:hover {background-position:-52px 0px;}
+#ime-logo:active {background-position:-104px 0px;}
+#ime-page-up,#ime-page-down{background:url(../images/page.png) white;width:22px;height:18px;float:right;top:2px;position:relative;cursor:pointer;}
+#ime-page-up{background-position:0px 0px;}
+#ime-page-up:hover{background-position:-22px 0px;}
+#ime-page-up:active{background-position:-44px 0px;}
+#ime-page-down{background-position:-88px 0px;}
+#ime-page-down:hover{background-position:-110px 0px;}
+#ime-page-down:active{background-position:-132px 0px;}
+#ime-page-up.ime-button-disable{background-position:-66px 0px;}
+#ime-page-down.ime-button-disable{background-position:-154px 0px;}
+.clear{clear:both}

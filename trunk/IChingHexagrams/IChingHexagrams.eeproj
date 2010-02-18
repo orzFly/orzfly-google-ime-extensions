@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--EmEditor Project file-->
+<Project>
+<Files>
+	<File RelativePath="IChingHexagrams.lua"/>
+	<File RelativePath="IChingHexagrams.png"/>
+	<File RelativePath="IChingHexagrams.source.png"/>
+</Files>
+</Project>

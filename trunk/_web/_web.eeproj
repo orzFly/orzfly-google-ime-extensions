@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--EmEditor Project file-->
+<Project>
+<Files>
+	<Filter Name="css">
+		<File RelativePath="css\ime.css"/>
+		<File RelativePath="css\style.css"/>
+	</Filter>
+	<Filter Name="images">
+		<File RelativePath="images\logo.png"/>
+		<File RelativePath="images\page.png"/>
+		<File RelativePath="images\toolstrip-button-active.png"/>
+		<File RelativePath="images\toolstrip-button-hover.png"/>
+	</Filter>
+	<File RelativePath="index.html"/>
+	<Filter Name="js">
+		<File RelativePath="js\ime.ext.bj.js"/>
+		<File RelativePath="js\ime.ext.xs.js"/>
+		<File RelativePath="js\ime.js"/>
+		<File RelativePath="js\jquery.js"/>
+	</Filter>
+</Files>
+</Project>
