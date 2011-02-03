@@ -2,7 +2,7 @@
 
 ------------------------------------------------
 -- 谷歌拼音易经卦输入扩展
--- 版本: 0.1.0.1
+-- 版本: 0.1.0.2
 -- 作者：Yichen Lu
 -- 作者主页：http://orztech.com/
 -- 项目主页: http://code.google.com/p/google-pinyin-api/
@@ -14,7 +14,7 @@ _0=pairs function _1(_6)local _2={}for _4 in _0(_6)do table.insert(_2,_4)end tab
 
 function YichenLu_IChingHexagrams(arg)
   local input = string.lower(arg)
-  local pos = string.find(input, "#")
+  local pos = string.find(input, ",")
   local inputn = nil
   local metatables = nil
   if (not (pos==nil)) then
@@ -25,7 +25,7 @@ function YichenLu_IChingHexagrams(arg)
         table.insert(metatables, {["suggest"] = k, ["help"] = v[3].."："..v[4], ["id"] = k})
       end
     elseif _YichenLu_IChingHexagrams_Code[inputn] then
-      metatables = {_YichenLu_IChingHexagrams_Code[inputn][3], _YichenLu_IChingHexagrams_Code[inputn][4], _YichenLu_IChingHexagrams_Code[inputn][1], "#"..inputn}
+      metatables = {_YichenLu_IChingHexagrams_Code[inputn][3], _YichenLu_IChingHexagrams_Code[inputn][4], _YichenLu_IChingHexagrams_Code[inputn][1], "."..inputn}
     end
   elseif #arg == 0 then
     metatables = {}
@@ -52,7 +52,7 @@ function YichenLu_IChingHexagrams(arg)
     if not (flag==nil) then metatables={flag} end
   end
   if (type(metatables)=="table") and (#metatables == 1) then
-    return YichenLu_IChingHexagrams("#"..metatables[1]["id"])
+    return YichenLu_IChingHexagrams("."..metatables[1]["id"])
   elseif ((type(metatables)=="table") and (#metatables == 0)) or (metatables==nil) then
     return "-- 找不到您输入的卦 --"
   end

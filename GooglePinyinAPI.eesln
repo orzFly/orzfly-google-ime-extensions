@@ -4,14 +4,17 @@
 	<Projects>
 		<Project RelativePath="_web\_web.eeproj"/>
 		<Project RelativePath="Braille\Braille.eeproj"/>
+		<Project RelativePath="ChineseLunar\ChineseLunar.eeproj"/>
+		<Project RelativePath="HanziAreaCode\HanziAreaCode.eeproj"/>
 		<Project RelativePath="IChingHexagrams\IChingHexagrams.eeproj"/>
 		<Project RelativePath="StudentsComments\StudentsComments.eeproj"/>
+		<Project RelativePath="UnitConverter\UnitConverter.eeproj"/>
 	</Projects>
 
 	<GlobalOptions>
-		<SelectedType Value="2"/>
-		<SelectedPath Value="E:\orzTech\GooglePinyinAPI\_web\css\style.css"/>
-		<SelectedProject Value="E:\orzTech\GooglePinyinAPI\_web\_web.eeproj"/>
+		<SelectedType Value="0"/>
+		<SelectedPath Value="E:\orzTech\GooglePinyinAPI\IChingHexagrams\IChingHexagrams.eeproj"/>
+		<SelectedProject Value="E:\orzTech\GooglePinyinAPI\IChingHexagrams\IChingHexagrams.eeproj"/>
 		<StartUpProject Value="E:\orzTech\GooglePinyinAPI\_web\_web.eeproj"/>
 	</GlobalOptions>
 </Solution>
